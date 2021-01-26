@@ -1,7 +1,7 @@
 import asyncHandler from 'express-async-handler'
 import Order from '../models/orderModel.js'
 
-// @desc    Creae new order
+// @desc    Create new order
 // @route   GET /api/products
 // @access  Private
 const addOrderItems = asyncHandler(async (req, res) => {
@@ -36,4 +36,4 @@ const addOrderItems = asyncHandler(async (req, res) => {
   }
 })
 
-export { addOrderItems, createdOrder }
+export { addOrderItems }
