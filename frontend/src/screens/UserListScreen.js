@@ -39,8 +39,8 @@ const UserListScreen = () => {
             </tr>
           </thead>
           <tbody>
-            {users.map((user) => {
-              ;<tr key={user._id}>
+            {users.map((user) => (
+              <tr key={user._id}>
                 <td>{user._id}</td>
                 <td>{user.name}</td>
                 <td>
@@ -68,7 +68,7 @@ const UserListScreen = () => {
                   </Button>
                 </td>
               </tr>
-            })}
+            ))}
           </tbody>
         </Table>
       )}
